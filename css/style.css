@@ -248,6 +248,7 @@ body {
 
 .works__item {
   max-width: 550px;
+  width: 100%;
   margin-bottom: 30px;
 }
 .works__item img {
@@ -474,4 +475,34 @@ body {
 .any__kitchen {
   font-size: 18px;
   margin-top: 30px;
+}
+
+.form__one {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.form__one form {
+  margin: 0 auto;
+  max-width: 690px;
+  background: #D9D9D9;
+  padding: 50px;
+}
+
+.input_block {
+  display: block;
 }
