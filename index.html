@@ -14,16 +14,174 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a href="tel+74957448667" class="tel">+7 495 744-86-67</a>
-            </div>
+    <div class="modal">
+        <div class="modal__content">
+            <h2>Спасибо!</h2>
+            <p>Скоро мы с вами свяжемся</p>
         </div>
-    </header>
+    </div>
+    <div class="form__one hidden">
+        <form class="oneForm" action="#">
+            <div class="closeFormone"><img src="images/close.svg" alt=""></div>
+            <h2 class="form__title">Оставьте ваши данные
+                и мы свяжемся с вами!</h2>
+                <div class="input_block">
+                   
+            <input name="userName" placeholder="Ваше имя" required id="name" type="text">
+                </div>
+            <div class="input_block">
+               
+            <input name="userPhone" placeholder="Ваш телефон" required id="number" type="text">
+            </div>
+            <div class="input_block">
+                
+            <input name="userEmail" placeholder="Ваша почта" required id="email" type="text">
+            </div>
+            <div class="btn_block">
+                <button type="submit">Отправить</button>
+                <span>Нажимая кнопку «отправить», я соглашаюсь на обработку персональных данных.</span>
+            </div>
+        </form>
+    </div>
+    <div class="form__anket hidden">
+        <div class="container">
+            <form class="anketa" action="#">
+                <div class="close"><img src="images/close.svg" alt=""></div>
+                <h2 class="form__title">Заполните анкету и мы свяжемся с вами!</h2>
+                <div class="form__inner">
+                    <div class="form__left">
+                        <div class="form__item-one">
+                            <input name="userName" placeholder="Ваше имя" required id="name" type="text">
+                            <input name="userPhone" placeholder="Ваш телефон" required id="number" type="text">
+                            <input name="userEmail" placeholder="Ваша почта" required id="email" type="text">
+                            <input name="kitchenSize" placeholder="Размеры кухни ПОГ.М" required id="size" type="text">
+                        </div>
+                        <div class="form__item-two">
+                            <div class="fasads">
+                                <h5>Фасады</h5>
+                                <div class="fasads__inner">
+                                    <div class="fasad_div">
+                                        <label>
+                                            <input value="ЛДСП" type="radio" name="fasad">
+                                            ЛДСП
+                                        </label>
+                                        <label>
+                                            <input value="Шпон" type="radio" name="fasad">
+                                            Шпон
+                                        </label>
+                                        <label>
+                                            <input value="Шмон-эмаль" type="radio" name="fasad">
+                                            Шмон-эмаль
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input value="Эмаль" type="radio" name="fasad">
+                                            Эмаль
+                                        </label>
+                                        <label>
+                                            <input value="Пленка" type="radio" name="fasad">
+                                            Пленка
+                                        </label>
+                                        <label>
+                                            <input value="Другое" type="radio" name="fasad">
+                                            Другое
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="style">
+                                <h5>Стиль</h5>
+                                <div class="style__inner">
+                                    <label>
+                                        <input value="Классический" type="radio" name="style">
+                                        Классический
+                                    </label>
+                                    <label>
+                                        <input value="Современный" type="radio" name="style">
+                                        Современный
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__right">
+                     
+                            <h5>Форма кухни</h5>
+                            <div class="form__items">
+                                <div class="form_item">
+                                    <img src="images/ugl-kuh.svg" alt="">
+                                    <label>
+                                        <input value="Угловая" name="formaKuh" type="radio">
+                                        Угловая
+                                    </label>
+                                </div>
+                                <div class="form_item">
+                                    <img src="images/p-kuh.svg" alt="">
+                                    <label>
+                                        <input value="П-образная" name="formaKuh" type="radio">
+                                        П-образная
+                                    </label>
+                                </div>
+                                <div class="form_item">
+                                    <img src="images/pr-kuh.svg" alt="">
+                                    <label>
+                                        <input value="Прямая" name="formaKuh" type="radio">
+                                        Прямая
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="ostrov__block">
+                                <h5>Остров</h5>
+                            <div class="ostrov__items">
+                                <div class="form_item">
+                                    <img src="images/ostrov.svg" alt="">
+                                    <label>
+                                        <input value="С островом" name="ostrov" type="radio">
+                                       С островом
+                                    </label>
+                                </div>
+                                <div class="form_item">
+                                    <img src="images/bez-ostr.svg" alt="">
+                                    <label>
+                                        <input value="Без острова" name="ostrov" type="radio">
+                                        Без острова
+                                    </label>
+                                </div>
+                                
+                            </div>
+                            </div>
+                            <div class="base__block">
+                                <h5>Верхняя база ( верхний ряд ящиков )</h5>
+                                <label>
+                                    <input value="Да" name="base" type="radio">
+                                    Да
+                                </label>
+                                <label>
+                                    <input value="Нет" name="base" type="radio">
+                                    Нет
+                                </label>
+                            </div>
+                            <div class="btn__form">
+                                <button type="submit">Отправить</button>
+                                <span>Нажимая кнопку «отправить», я соглашаюсь на обработку персональных данных.</span>
+                            </div>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+   
+            
     <section class="top">
         <div class="container">
             <div class="top__inner">
+                <div class="tel_block">
+                    <a href="tel+74957448667" class="tel">+7 495 744-86-67</a>
+                </div>
+
                 <div class="logo">
                     <img src="images/logo.svg" alt="logo">
                 </div>
@@ -36,21 +194,22 @@
     </section>
     <section class="products">
         <div class="container">
-            <h2 class="title any__kitchen">Изготив любую кухню по вашему проекту.</h2>
+            <h2 class="title any__kitchen">Изготовим любую кухню по вашему проекту</h2>
             <h2 class="title products__title">ПРИМЕРЫ КУХонь</h2>
             <div class="products__wrapper">
-                <div class="products__inner">
+                
+                <div class="products__inner bottom">
                     <div class="products__item">
                         <div class="products__img swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="images/010/6334221ee26b2.jpeg" alt="kuh">
+                                    <img src="images/kuhni/1.png" alt="kuh">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="images/010/6334221ee43e2.jpeg" alt="kuh">
+                                    <img src="images/kuhni/1.png" alt="kuh">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="images/010/6334221ee6a70.jpeg" alt="kuh">
+                                    <img src="images/kuhni/1.png" alt="kuh">
                                 </div>
                             </div>
                             <div class="swiper-button-prev"></div>
@@ -72,19 +231,13 @@
                         <div class="products__img swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="images/011/1.jpg" alt="kuh">
+                                    <img src="images/kuhni/1.png" alt="kuh">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="images/011/2.jpg" alt="kuh">
+                                    <img src="images/kuhni/1.png" alt="kuh">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="images/011/3.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/011/4.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/011/5.jpg" alt="kuh">
+                                    <img src="images/kuhni/1.png" alt="kuh">
                                 </div>
                             </div>
                             <div class="swiper-button-prev"></div>
@@ -106,129 +259,13 @@
                         <div class="products__img swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="images/012/1.jpg" alt="kuh">
+                                    <img src="images/kuhni/1.png" alt="kuh">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="images/012/2.jpg" alt="kuh">
+                                    <img src="images/kuhni/1.png" alt="kuh">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="images/012/3.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/012/4.jpg" alt="kuh">
-                                </div>
-                            </div>
-                            <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-                        </div>
-                        <div class="furnitura__block">
-                            <span class="furnitura">Модель:</span>
-                            <span class="furnitura__name">Название</span>
-
-                        </div>
-                        <div class="fasad__block">
-                            <span class="fasad">Описание:</span>
-                            <span class="fasad__name">Название</span>
-
-                        </div>
-                        <p class="item__price">от 70 000 ₽</p>
-                    </div>
-                </div>
-                <div class="products__inner">
-                    <div class="products__item">
-                        <div class="products__img swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="images/014/1.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/014/2.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/014/3.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/014/4.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/014/5.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/014/6.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/014/7.jpg" alt="kuh">
-                                </div>
-                            </div>
-                            <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-                        </div>
-                        <div class="furnitura__block">
-                            <span class="furnitura">Модель:</span>
-                            <span class="furnitura__name">Название</span>
-
-                        </div>
-                        <div class="fasad__block">
-                            <span class="fasad">Описание:</span>
-                            <span class="fasad__name">Название</span>
-
-                        </div>
-                        <p class="item__price">от 70 000 ₽</p>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__img swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="images/015/634ea1decd9bd.jpeg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/015/634ea1decf112.jpeg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/015/634ea1ded0ad3.jpeg" alt="kuh">
-                                </div>
-                            </div>
-                            <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-                        </div>
-                        <div class="furnitura__block">
-                            <span class="furnitura">Модель:</span>
-                            <span class="furnitura__name">Название</span>
-
-                        </div>
-                        <div class="fasad__block">
-                            <span class="fasad">Описание:</span>
-                            <span class="fasad__name">Название</span>
-
-                        </div>
-                        <p class="item__price">от 70 000 ₽</p>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__img swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="images/016/1.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/016/2.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/016/3.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/016/4.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/016/5.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/016/6.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/016/7.jpg" alt="kuh">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/016/8.jpg" alt="kuh">
+                                    <img src="images/kuhni/1.png" alt="kuh">
                                 </div>
                             </div>
                             <div class="swiper-button-prev"></div>
@@ -333,8 +370,93 @@
                         <p class="item__price">от 70 000 ₽</p>
                     </div>
                 </div>
-                
-            <h2 class="title any__kitchen">Изготив любую кухню по вашему проекту.</h2>
+                <div class="products__inner bottom">
+                    <div class="products__item">
+                        <div class="products__img swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/kuhni/1.png" alt="kuh">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/kuhni/1.png" alt="kuh">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/kuhni/1.png" alt="kuh">
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="furnitura__block">
+                            <span class="furnitura">Модель:</span>
+                            <span class="furnitura__name">Название</span>
+
+                        </div>
+                        <div class="fasad__block">
+                            <span class="fasad">Описание:</span>
+                            <span class="fasad__name">Название</span>
+
+                        </div>
+                        <p class="item__price">от 70 000 ₽</p>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/kuhni/1.png" alt="kuh">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/kuhni/1.png" alt="kuh">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/kuhni/1.png" alt="kuh">
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="furnitura__block">
+                            <span class="furnitura">Модель:</span>
+                            <span class="furnitura__name">Название</span>
+
+                        </div>
+                        <div class="fasad__block">
+                            <span class="fasad">Описание:</span>
+                            <span class="fasad__name">Название</span>
+
+                        </div>
+                        <p class="item__price">от 70 000 ₽</p>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__img swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/kuhni/1.png" alt="kuh">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/kuhni/1.png" alt="kuh">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/kuhni/1.png" alt="kuh">
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="furnitura__block">
+                            <span class="furnitura">Модель:</span>
+                            <span class="furnitura__name">Название</span>
+
+                        </div>
+                        <div class="fasad__block">
+                            <span class="fasad">Описание:</span>
+                            <span class="fasad__name">Название</span>
+
+                        </div>
+                        <p class="item__price">от 70 000 ₽</p>
+                    </div>
+                </div>
+            <h2 class="title any__kitchen">Изготовим любую кухню по вашему проекту</h2>
                 <div class="more__works">ВСЕ примеры РАБОТ НА НАШЕМ САЙТЕ <a target="_blank" href="https://kit-project.ru/"> <br> www.kit-project.ru</a></div>
             </div>
         </div>
@@ -420,19 +542,20 @@
                     <p>Заполните форму обратной связи!
                         мы свяжемся с вами</p>
                 </div>
-                <a href="tel:+74957448667" class="design__btn blue__btn">ОСТАВИТЬ ЗаЯВКУ</a>
+                <button href="#" class="design__btn blue__btn btn_zayavka">ОСТАВИТЬ ЗаЯВКУ</button>
             </div>
             <div class="design__item">
                 <div class="block project__block">
                     <p>Есть проект – отлично!
                         Заполните анкету для рассчета кухни и получите от нас подарок!</p>
                 </div>
-                <a href="tel:+74957448667" class="design__btn blue__btn">ЗАПОЛНИТЬ АНКЕТУ</a>
+                <button class="design__btn blue__btn anketa_btn">ЗАПОЛНИТЬ АНКЕТУ</button>
             </div>
         </div>
 </div>
     </section>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/mail.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
